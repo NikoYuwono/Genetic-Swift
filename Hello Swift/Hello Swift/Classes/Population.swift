@@ -63,13 +63,7 @@ class Population {
         }
         
         mutating func isBetterThan(chromosome:Chromosome) -> Bool {
-            if (fitness < chromosome.fitness) {
-                return false;
-            } else if (fitness > chromosome.fitness) {
-                return true;
-            }
-            
-            return false;
+            return (fitness < chromosome.fitness);
         }
     }
     
